@@ -124,7 +124,7 @@ L.control.layers({
       var circle = L.circle([row.latitude, row.longitude]).bindPopup("<b>LATITUDINE,LONGITUDINE:</b> " + row.latitude + "," + row.longitude + "<br /><b>LATITUDINE:</b> " + row.latitude + "<br /><b>LONGITUDINE:</b> " + row.longitude + "<br /><b>CODICE ID:</b> " + row.id + "<br /><b>INDIRIZZO:</b> " + row.indirizzo + "," + row.comune_ok + "<br /><b>GESTORE:</b>"  + row.gestore.fontcolor(colorebande) + "<br />").openPopup();
       circle.bindTooltip("<span>" + row.id + " - " + row.gestore.fontcolor(colorebande) + "</span>" , {permanent: true, direction: 'bottom'}).openTooltip();
 	    
-      circle.addTo(mymap);  }
+      circle.addTo(map);  }
 
   });
 	  //Creazione del pulsante per eliminare il marker di ricerca
