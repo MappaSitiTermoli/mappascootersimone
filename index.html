@@ -121,7 +121,7 @@ L.control.layers({
     iconUrl: 'default.png',
    iconSize: [38, 38],iconAnchor:  [19, 38],popupAnchor:  [0, -34] // point from which the popup should open relatitudeive to the iconAnchor
 }); }
-      var circle = L.circle([row.latitude, row.longitude]).bindPopup("<b>LATITUDINE,LONGITUDINE:</b> " + row.latitude + "," + row.longitude + "<br /><b>LATITUDINE:</b> " + row.latitude + "<br /><b>LONGITUDINE:</b> " + row.longitude + "<br /><b>CODICE ID:</b> " + row.id + "<br /><b>INDIRIZZO:</b> " + row.indirizzo + "," + row.comune_ok + "<br /><b>GESTORE:</b>"  + row.gestore.fontcolor(colorebande) + "<br />").openPopup();
+      var circle = L.circle([row.Latitudine, row.Longitudine]).bindPopup("<b>LATITUDINE,LONGITUDINE:</b> " + row.Latitudine + "," + row.Longitudine + "<br /><b>LATITUDINE:</b> " + row.Latitudine + "<br /><b>LONGITUDINE:</b> " + row.Longitudine + "<br /><b>MILLISECONDI:</b> " + row.MillisecondssinceEpoch + "<br /><b>VELOCITA' - VELOCITA' GPS:</b> " + row.Vel + " - " + row.VelocitaGPS + "<br /><b>AMPERE - WATT:</b>"  + row.Ampere + " - " + row.Watt + "<b>PERCENTUALE DELLA BATTERIA -  VOLTAGGIO DELLA BATTERIA:</b> " + row.Percentualedellabatteria + " - "  +  row.Voltaggiodellabatteria  + "<br /><b>CAPACITA' DELLA BATTERIA - TEMPERATURA DELLA BATTERIA:</b> " + row.Temperaturadellabatteria + "<br /><b>KM RESIDUI - KM TOTALI:</b> " + row.Chilometriresidui + " - " + row.Chilometraggiototale + "<br />").openPopup();
       circle.bindTooltip("<span>" + row.id + " - " + row.gestore.fontcolor(colorebande) + "</span>" , {permanent: true, direction: 'bottom'}).openTooltip();
 	    
       circle.addTo(map);  }
