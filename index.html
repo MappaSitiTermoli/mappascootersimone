@@ -133,8 +133,9 @@ L.control.layers({
         btn.onclick =  function() {
           map.removeLayer(results);
         }
- L.control.locate({
-            position: "bottomright"
+  L.control.locate({
+            position: "bottomright",
+locateOptions: { enableHighAccuracy: true }
         }).addTo(map);
  //Qui definisco l'icona del marker di ricerca
 	    
